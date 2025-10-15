@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookReview Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page-bg"></div>
+
+    <header>
+        <h1>📚 BookReview Sentiment Analyzer</h1>
+        <p>“Every review tells a story — let’s uncover its emotion.”</p>
+    </header>
+
+    <main>
+        <div class="book-container">
+            <div class="book">
+                <div class="left-page"></div>
+                <div class="right-page">
+                    <div class="review-box">
+                        <span class="quote open">“</span>
+                        <textarea id="userInput" placeholder="Write your book review here..."></textarea>
+                        <span class="quote close">”</span>
+                    </div>
+                    <button id="analyzeBtn">Analyze Sentiment</button>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
